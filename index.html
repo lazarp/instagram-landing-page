@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
 </head>
 <body>
     <div class="instagram-wrapper">
-        <div class="instagram-left">
+        <section class="instagram-left">
             <img src="sources\home-phones.png" alt="Ilustração com Celulares exibindo o aplicativo Instagram">
-        </div>
-        <div class="instagram-right">
-            <h1 class="instagram-logo">Instagram</h1>
-            <form class="instagram-account">
-                <input aria-label="Telefone, nome de usuário ou email" type="text" class="username">
-                <input aria-label="Senha" type="password" class="password">
-                <button  class="enter" type="submit">Entrar</button>
-            </form>
-            <div class="separator">ou</div>
-            <div class="facebook-container">
-                <span class="facebook-logo"></span>
-                <a href="" class="facebook-login">Entrar com o Facebook</a>
+        </section>
+        <section class="instagram-right">
+            <div class="login">
+                <h1 class="instagram-logo">Instagram</h1>
+                <form class="instagram-account">
+                    <input aria-label="Telefone, nome de usuário ou email" type="text" class="username">
+                    <input aria-label="Senha" type="password" class="password">
+                    <button  class="enter" type="submit">Entrar</button>
+                </form>
+                <div class="separator">ou</div>
+                <div class="facebook-container">
+                    <span class="facebook-logo"></span>
+                    <a href="" class="facebook-login">Entrar com o Facebook</a>
+                </div>
+                <a href="https://www.instagram.com/accounts/password/reset/" class="forget-pass">Esqueceu a senha?</a>
             </div>
-            <a href="https://www.instagram.com/accounts/password/reset/" class="forget-pass">Esqueceu a senha?</a>
-            <div class="signup">
+            
+            <div class="instagram-signup">
                 <p class="signup-text">Não tem uma conta?<a href="https://www.instagram.com/accounts/emailsignup/" class="signup-link">Cadastre-se</a></p>
             </div>
             <div class="instagram-get-app">
                 <p>Obtenha o aplicativo.</p>
-                <div class="group">
+                <div class="buttons">
                     <a href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&ct=igweb.loginPage.badge&mt=8&vt=lo" class="iphone-app">
                         <img src="sources\iphone-app.png" alt="Baixe na App Store" class="">
                     </a>
@@ -34,6 +38,6 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 </body>
