@@ -49,6 +49,31 @@ body{
     height:50vh;
     border: 1px solid rgb(219,219,219);
 }
+.instagram-logo{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:20vh;
+
+}
+.instagram-logo::after{
+    content:"";
+    display: inline-block;
+    border:1px solid black;
+    position:absolute;
+    left:-50%;
+    width:175px;
+    height:51px;
+    margin:auto;
+    background-image: url(sources/icons.png);
+    background-position: 0 -130px;
+    background-color:white;
+    /* display: block;
+	overflow: hidden;
+	text-indent: 110%;
+	white-space: nowrap; */
+}
 .instagram-account{
     display:flex;
     flex-direction: column;
