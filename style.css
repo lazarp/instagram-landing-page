@@ -17,30 +17,39 @@ body{
 .instagram-wrapper{
     display:flex;
     justify-content: space-evenly;
-    width: 60%;
+    width: 70%;
     height: 100vh;
+	padding-top:6vh;
 }
 .instagram-left{
     display:flex;
     align-items: center;
     justify-content: center;
     width:50%;
-    height:100%;
+    height:100vh;
+	padding-left:10%;
+	border:1px solid black;
 }
 .instagram-left img{
-    height:40rem;
+    height:auto;
+	max-width:100%;
+	max-height:100%;
+	border:1px solid red;
 }
 .instagram-right{
     display:flex;
     align-items:center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width:50%;
     height:100vh;
-    padding:10vh 0;
+	padding-right:10%;
+    
+	border:1px solid black;
 }
 .instagram-right .login{
     display:flex;
+	position:relative; /*recurso para posicionar o after do logo*/
     align-items:center;
     flex-direction: column;
     justify-content: space-evenly;
@@ -50,7 +59,7 @@ body{
     border: 1px solid rgb(219,219,219);
 }
 .instagram-logo{
-    position:relative;
+    /*position:relative;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,10 +68,7 @@ body{
 }
 .instagram-logo::after{
     content:"";
-    display: inline-block;
-    border:1px solid black;
-    position:absolute;
-    left:-50%;
+    position:absolute; /*Relaciona-se com o logo*/
     width:175px;
     height:51px;
     margin:auto;
@@ -79,12 +85,14 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width:80%;
+    width:100%;
     height:30vh;
 }
 .instagram-account input{
     font-size: 20px;
-    width:60%;
+    width:80%;
+	padding: 9px 0 7px 8px;
+	border: 1px solid rgb(219,219,219);
 }
 .facebook-logo{
     background-image: url(sources\icons.png);
