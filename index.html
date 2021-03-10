@@ -12,8 +12,15 @@
             <div class="login">
                 <h1 class="instagram-logo">Instagram</h1>
                 <form class="instagram-account">
-                    <input class="username" aria-label="Telefone, nome de usuário ou email" type="text">
-                    <input class="password" aria-label="Senha" type="password">
+                    <label class="input-container username-container">
+                        <input class="username" aria-label="Telefone, nome de usuário ou email" type="text" pattern=".+" required>
+                        <span class="username-placeholder">Telefone, nome de usuário ou email</span>
+                    </label>
+                    <label class="input-container password-container">
+                        <input class="password" aria-label="Senha" type="password" required>
+                        <span class="Senha">Senha</span>
+                    </label>
+                    
                     <button class="enter" type="submit">Entrar</button>
                 </form>
                 <div class="separator">ou</div>
