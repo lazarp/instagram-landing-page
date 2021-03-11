@@ -241,3 +241,27 @@ input:valid + span{
     width:auto;
     height:40px;
 }
+
+@media (max-width: 875px){
+    .instagram-left{
+        display:none;
+    }
+}
+@media (max-width: 450px){
+    .instagram-wrapper{
+        margin:auto;
+        padding-top:0;
+        width:100vw;
+    }
+    .instagram-right, .instagram-right .login, .instagram-logo, .instagram-account, .input-container, .username, .input-container span{
+        width:100vw;
+        float:left;
+    }
+    .instagram-logo{
+        /* position:relative; */
+    }
+    .instagram-logo:after{
+        /* transform: scale(0.7); */
+    }
+
+}
