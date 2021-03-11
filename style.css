@@ -76,10 +76,6 @@ body{
     background-image: url(sources/icons.png);
     background-position: 0 -130px;
     background-color:white;
-    /* display: block;
-	overflow: hidden;
-	text-indent: 110%;
-	white-space: nowrap; */
 }
 .instagram-account{
     display:flex;
@@ -102,6 +98,22 @@ body{
     border: 1px solid rgb(100,100,100);
 
 }
+
+.input-container input{
+    background:pink;
+    font-size: 20px;
+    width:100%;
+    height:100%;
+    border:none;
+    padding-left: 9px;
+    /* padding-top:20px; */
+	/* padding: 9px 0 0px 8px;
+    margin-top:10px; */
+    line-height: 0px;
+    position:relative;
+    display: flex;
+}
+
 .input-container span{
     position:absolute;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;font-size:12px;
@@ -109,18 +121,6 @@ body{
     padding-left:9px;
     /* background-color: pink; */
     transition: all 200ms;
-}
-.instagram-account input{
-    font-size: 12px;
-    width:100%;
-    border:none;
-	padding: 9px 0 0px 8px;
-    margin-top:10px;
-    line-height: 0px;
-
-	
-    position:relative;
-    display: flex;
 }
 input:focus, input:active{
     border:none;
@@ -131,12 +131,13 @@ input:focus, input:active{
     color:black;
     position:absolute;
 }
+input:valid{
+    font-size: 12px;
+    padding-top: 15px;
+}
 input:valid + span{
-    /* top:-10px; */
-    /* background-color: red; */
     top:4px;
     font-size:10px;
-    /* transform: scale(0.8); */
     color:blue;
     transition: all 200ms;
 }
