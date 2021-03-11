@@ -162,11 +162,35 @@ input:valid + span{
     background-color: rgba(0, 149, 246, 0.3);
     border:none;
 }
+.facebook-container{
+    /* background: red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
 .facebook-logo{
+
     background-image: url(sources/icons.png);
     background-position-x: -414px;
     background-position-y: -259px;
+    /* background-size:16px 16px; */
+    width:16px;
+    height:16px;
+    margin-right: 8px;
 
+}
+.facebook-login{
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size:14px;
+    color:rgb(56, 81, 133);
+    font-weight: 600;
+}
+.forget-pass{
+    font-size:12px;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color:rgb(0,55,107);
 }
 .instagram-signup{
     border:1px solid rgb(219,219,219);
@@ -176,9 +200,19 @@ input:valid + span{
     width:100%;
     height:63px;
     margin: 10px 0;
+    
 }
 .instagram-signup p{
     margin:15px;
+    font-size:14px;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color:rgb(38,38,38);
+}
+.instagram-signup p span{
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color:rgb(0,149,246);
+    font-weight: 600;
+    font-size:14px;
 }
 .instagram-get-app{
     /* border:1px solid gray; */
@@ -191,6 +225,9 @@ input:valid + span{
 }
 .instagram-get-app p{
     margin:15px;
+    font-size:14px;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color:rgb(38,38,38);
 }
 .instagram-get-app .buttons{
     display:flex;
