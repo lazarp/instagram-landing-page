@@ -44,7 +44,39 @@ body{
 	position:absolute;
 	width:240px;
 	height:427px;
-	background-image:url("sources/6f03eb85463c.jpg");
+    overflow: hidden;
+	/* background-image:url("sources/image1.jpg"); */
+
+}
+.instagram-left .screens img{
+    position:absolute;
+    opacity:0;
+    animation-name: fade2;
+    animation-duration:15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear  ;
+}
+.screens img:nth-child(1){animation-delay: 0s; }
+.screens img:nth-child(2){animation-delay: 3s; }
+.screens img:nth-child(3){animation-delay: 6s; }
+.screens img:nth-child(4){animation-delay: 9s; }
+.screens img:nth-child(5){animation-delay: 12s;}
+
+@keyframes fade{
+    0%      {opacity:0;}
+    /* 12.5%   {opacity:1;} */
+    25%     {opacity:1;}
+    26%,74% {opacity: 1;}
+    75%     {opacity:1;}
+    /* 87.5%   {opacity:1;} */
+    100%    {opacity:0;}
+}
+@keyframes fade2{
+    0%      {opacity: 0;}
+    6.7%    {opacity: 1;}
+    20%     {opacity: 1;}
+    26.7%   {opacity: 0;}
+    100%    {opacity: 0;}
 }
 .instagram-right{
     display:flex;
