@@ -43,9 +43,6 @@ body{
     justify-content: center;
     width:350px;
     height:100%;
-	/* padding-right:10%; */
-    
-	/* border:1px solid purple; */
 }
 .instagram-right .login{
     display:flex;
@@ -249,19 +246,27 @@ input:valid + span{
 }
 @media (max-width: 450px){
     .instagram-wrapper{
-        margin:auto;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content:center;
+		margin:auto;
         padding-top:0;
-        width:100vw;
+        min-width:100vw;
     }
-    .instagram-right, .instagram-right .login, .instagram-logo, .instagram-account, .input-container, .username, .input-container span{
-        width:100vw;
-        float:left;
-    }
-    .instagram-logo{
-        /* position:relative; */
-    }
-    .instagram-logo:after{
-        /* transform: scale(0.7); */
-    }
-
+	.instagram-right .login{
+		min-width:100vw;
+	}
+}
+@media (max-width: 350px){
+	html{
+		max-width:350px;
+	}
+	
+	body, .instagram-wrapper, .instagram-account{
+		min-width:350px;
+	}
+	.input-container{
+		min-width:200px;
+	}
 }
