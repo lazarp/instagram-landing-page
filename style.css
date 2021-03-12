@@ -25,6 +25,7 @@ body{
     /* padding-left:10vh; */
 }
 .instagram-left{
+	position:relative;
     display:flex;
     justify-content: center;
     width:60%;
@@ -35,6 +36,15 @@ body{
 	/* width:200%; */
     background-size: 454px 618px;
 	/* border:1px solid red; */
+}
+.instagram-left .screens{
+	top:99px;
+	left:151px;
+	border:1px solid black;
+	position:absolute;
+	width:240px;
+	height:427px;
+	background-image:url("sources/6f03eb85463c.jpg");
 }
 .instagram-right{
     display:flex;
